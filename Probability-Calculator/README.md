@@ -39,7 +39,8 @@ The function returns the estimated probability of drawing the expected number of
 This creates a hat containing 5 blue balls, 4 red balls, and 2 green balls.
 
 2. Perform an Experiment:
-The experiment function is used to simulate drawing balls from the hat. For example, to estimate the probability of drawing at least 1 red ball and 2 green balls from the hat when drawing 4 balls:
+The experiment function is used to simulate drawing balls from the hat.
+For example, to estimate the probability of drawing at least 1 red ball and 2 green balls from the hat when drawing 4 balls:
 
 probability = experiment(
     hat=hat,
@@ -49,7 +50,8 @@ probability = experiment(
 )
 print(f"Estimated probability: {probability}")
 3. Monte Carlo Simulation:
- The program performs a large number of random experiments (as specified by num_experiments) and counts how many times the drawn balls meet the expected conditions. The probability is estimated as the ratio of successful experiments to the total number of experiments.
+ The program performs a large number of random experiments (as specified by num_experiments) and counts how many times the drawn balls meet the expected conditions.
+The probability is estimated as the ratio of successful experiments to the total number of experiments.
 
 ```
 
