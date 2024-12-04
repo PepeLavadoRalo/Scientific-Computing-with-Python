@@ -34,12 +34,18 @@ print(food)
 print(create_spend_chart([food, clothing]))
 ```
 ### Methods
+
 Category Class:
 
 deposit(amount, description=None): Adds a deposit.
+
 withdraw(amount, description=None): Makes a withdrawal if funds are available.
+
 get_balance(): Returns the current balance.
+
 transfer(amount, category): Transfers funds between categories.
+
 check_funds(amount): Checks if enough funds are available for withdrawal or transfer.
+
 create_spend_chart(categories): Generates a bar chart showing the percentage spent in each category.
 
