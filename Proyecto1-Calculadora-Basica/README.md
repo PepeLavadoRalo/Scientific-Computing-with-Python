@@ -1,18 +1,18 @@
 # Arithmetic Arranger
 
-# This Python program arranges arithmetic problems vertically and side-by-side. 
-# It can also display the results if desired.
+This Python program arranges arithmetic problems vertically and side-by-side. It can also display the results if desired.
 
 ## **Functionality**
-# - Formats arithmetic problems (addition and subtraction) neatly.
-# - Option to show answers alongside the problems.
-# - Validates input, ensuring no more than 4 digits for operands and that only `+` and `-` are used.
+- Formats arithmetic problems (addition and subtraction) neatly.
+- Option to show answers alongside the problems.
+- Validates input, ensuring no more than 4 digits for operands and that only `+` and `-` are used.
 
 ## **Error Handling**
-# - Maximum of 5 problems at once.
-# - Only supports `+` and `-` operations.
-# - Operands cannot exceed 4 digits.
+- Maximum of 5 problems at once.
+- Only supports `+` and `-` operations.
+- Operands cannot exceed 4 digits.
 
+```python
 def arithmetic_arranger(problems, show_answers=False):
     # Check if there are more than 5 problems
     if len(problems) > 5:
@@ -63,30 +63,38 @@ def arithmetic_arranger(problems, show_answers=False):
         arranged_output += "\n    " + "    ".join(answers)
     
     return arranged_output
+```
 
 ## **Example Usage**
 
-# Example without answers
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+### Example without answers:
 
-# Example with answers
+```python
+print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+```
+
+### Example with answers:
+
+```python
 print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
+```
 
 ## **Example Output**
 
-# Without answers:
-'''
+### Without answers:
+
+```
    32      3801      45      123
 +  698   -    2   +  43   +  49
 -----    -----    ----    -----
    730      3799      88      172
-'''
+```
 
-# With answers:
-'''
+### With answers:
+
+```
    32      3801      45      123
 +  698   -  3801   +  43   +  49
 -----    -----    ----    -----
    730     -3800      88      172
-'''
-
+```
