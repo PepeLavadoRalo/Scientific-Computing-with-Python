@@ -50,7 +50,7 @@ probability = experiment(
 )
 print(f"Estimated probability: {probability}")
 3. Monte Carlo Simulation:
- The program performs a large number of random experiments (as specified by num_experiments) and counts how many times the drawn balls meet the expected conditions.
+The program performs a large number of random experiments (as specified by num_experiments) and counts how many times the drawn balls meet the expected conditions.
 The probability is estimated as the ratio of successful experiments to the total number of experiments.
 
 ```
