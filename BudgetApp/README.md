@@ -34,7 +34,7 @@ print(food)
 print(create_spend_chart([food, clothing]))
 ```
 ### Methods
-```bash
+```python
 Category Class:
 deposit(amount, description=None): Adds a deposit.
 withdraw(amount, description=None): Makes a withdrawal if funds are available.
