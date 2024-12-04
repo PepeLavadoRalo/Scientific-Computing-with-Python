@@ -19,7 +19,30 @@ print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
 # Example with answers
 print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
 
-## **Example Output**
+##
+Claro, aquí te paso todo el texto en formato de código para que solo tengas que copiar y pegar:
+
+python
+Copiar código
+# Arithmetic Arranger
+
+This Python program arranges arithmetic problems vertically and side-by-side. It can also display the results if desired.
+
+## **Functionality**
+- Formats arithmetic problems (addition and subtraction) neatly.
+- Option to show answers alongside the problems.
+- Validates input, ensuring no more than 4 digits for operands and that only `+` and `-` are used.
+
+## **Example Usage**
+```python
+from arithmetic_arranger import arithmetic_arranger
+
+# Example without answers
+print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+
+# Example with answers
+print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
+Example Output
    32      3801      45      123
 +  698   -    2   +  43   +  49
 -----    -----    ----    -----
