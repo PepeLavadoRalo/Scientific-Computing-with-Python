@@ -33,10 +33,6 @@ Represents a square, which is a special case of the rectangle where width and he
 ## Example Usage
 
 ```python
-# -------------------------------
-# Example Usage
-# -------------------------------
-
 # Create a rectangle
 rect = Rectangle(10, 5)
 print(rect)  # Output: Rectangle(width=10, height=5)
