@@ -28,7 +28,8 @@ Represents a square, which is a special case of the rectangle where width and he
 - `set_side(side)` - Sets the side of the square, updating both width and height.
 - `set_width(width)` - Overrides `Rectangle`'s method to ensure both sides are the same.
 - `set_height(height)` - Overrides `Rectangle`'s method to ensure both sides are the same.
-
+```
+```python
 # -------------------------------
 # Example Usage
 # -------------------------------
