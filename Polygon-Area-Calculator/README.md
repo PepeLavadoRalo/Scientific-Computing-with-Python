@@ -1,18 +1,19 @@
 # Polygon Area Calculator Project
 
-This project defines two classes, `Rectangle` and `Square`, to calculate areas, perimeters, diagonals, and more, using Object-Oriented Programming principles. The `Square` class inherits from `Rectangle`, ensuring reusable and extendable code.
+This project defines two classes, `Rectangle` and `Square`, to calculate areas, perimeters, diagonals, and more, using Object-Oriented Programming (OOP) principles. The `Square` class inherits from `Rectangle`, ensuring reusable and extendable code.
 
-## Features:
+## Features
 - Set dimensions dynamically.
 - Calculate area, perimeter, and diagonal length.
 - Generate ASCII art representations of shapes.
 - Determine how many times a smaller shape can fit into a larger one.
 
-## Classes:
-### `Rectangle`
-Represents a rectangle with a specified width and height. Provides methods to calculate area, perimeter, diagonal, and generate ASCII art representation.
+## Classes
 
-**Methods:**
+### `Rectangle`
+Represents a rectangle with a specified width and height. Provides methods to calculate area, perimeter, diagonal, and generate an ASCII art representation.
+
+#### Methods:
 - `set_width(width)` - Sets the width of the rectangle.
 - `set_height(height)` - Sets the height of the rectangle.
 - `get_area()` - Returns the area of the rectangle.
@@ -24,10 +25,12 @@ Represents a rectangle with a specified width and height. Provides methods to ca
 ### `Square`
 Represents a square, which is a special case of the rectangle where width and height are always equal.
 
-**Methods:**
+#### Methods:
 - `set_side(side)` - Sets the side of the square, updating both width and height.
 - `set_width(width)` - Overrides `Rectangle`'s method to ensure both sides are the same.
 - `set_height(height)` - Overrides `Rectangle`'s method to ensure both sides are the same.
+
+## Example Usage
 
 ```python
 # -------------------------------
@@ -80,6 +83,5 @@ rect.set_width(16)
 rect.set_height(8)
 print("Squares that fit:", rect.get_amount_inside(sq))  # Output: Squares that fit: 8
 ```
-## Running the Project:
+### Running the project 
 To use the Polygon Area Calculator, you can run the provided code in a Python environment. The example usage demonstrates how to create Rectangle and Square objects, set dimensions, and use the various methods to calculate areas, perimeters, diagonals, and generate ASCII representations.
-
