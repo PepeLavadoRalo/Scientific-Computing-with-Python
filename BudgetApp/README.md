@@ -33,6 +33,38 @@ food.transfer(50, clothing)
 print(food)
 print(create_spend_chart([food, clothing]))
 ```
+
+### Example Output
+```python
+*************Food*************
+Initial deposit           1000.00
+Groceries                  -10.15
+Transfer to Clothing       -50.00
+Total: 939.85
+
+Percentage spent by category
+100|          
+ 90|          
+ 80|          
+ 70|          
+ 60| o        
+ 50| o        
+ 40| o        
+ 30| o        
+ 20| o  o     
+ 10| o  o  o  
+  0| o  o  o  
+    ----------
+     F  C  
+     o  l  
+     o  o  
+     d  t  
+     h  h  
+     i  i  
+     n  n  
+     g     
+
+```
 ### Methods
 ```python
 Category Class:
