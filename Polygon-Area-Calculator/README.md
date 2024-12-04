@@ -29,31 +29,56 @@ Represents a square, which is a special case of the rectangle where width and he
 - `set_width(width)` - Overrides `Rectangle`'s method to ensure both sides are the same.
 - `set_height(height)` - Overrides `Rectangle`'s method to ensure both sides are the same.
 
-## Example Usage:
+# -------------------------------
+# Example Usage
+# -------------------------------
 
-```python
 # Create a rectangle
 rect = Rectangle(10, 5)
 print(rect)  # Output: Rectangle(width=10, height=5)
 print("Area:", rect.get_area())  # Output: Area: 50
 print("Perimeter:", rect.get_perimeter())  # Output: Perimeter: 30
 print("Diagonal:", rect.get_diagonal())  # Output: Diagonal: 11.180339887498949
+print("Picture:\n", rect.get_picture())
+# Output:
+# **********
+# **********
+# **********
+# **********
+# **********
 
 # Create a square
 sq = Square(9)
 print(sq)  # Output: Square(side=9)
 print("Area:", sq.get_area())  # Output: Area: 81
 print("Diagonal:", sq.get_diagonal())  # Output: Diagonal: 12.727922061357855
+print("Picture:\n", sq.get_picture())
+# Output:
+# *********
+# *********
+# *********
+# *********
+# *********
+# *********
+# *********
+# *********
+# *********
 
 # Modify dimensions
 sq.set_side(4)
 print(sq)  # Output: Square(side=4)
+print("Picture:\n", sq.get_picture())
+# Output:
+# ****
+# ****
+# ****
+# ****
 
 # Determine how many squares fit in a rectangle
 rect.set_width(16)
 rect.set_height(8)
 print("Squares that fit:", rect.get_amount_inside(sq))  # Output: Squares that fit: 8
 ```
-# Running the Project:
+## Running the Project:
 To use the Polygon Area Calculator, you can run the provided code in a Python environment. The example usage demonstrates how to create Rectangle and Square objects, set dimensions, and use the various methods to calculate areas, perimeters, diagonals, and generate ASCII representations.
 
